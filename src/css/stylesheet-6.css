@@ -1,0 +1,129 @@
+/* utility class */
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* pitch-content section */
+.pitch-content,
+.rewards-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pitch-content > h2 {
+  font-size: calc(var(--font-size-large-heading) * 0.8);
+  font-family: "gilroy-light";
+}
+
+.pitch-content > h3 {
+  font-size: calc(var(--font-size-large-heading) * 0.4);
+}
+
+.pitch-content > p {
+  font-size: calc(var(--font-size-large-heading) * 0.3);
+}
+
+/* rewards section */
+.rewards-container {
+  width: 100%;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.rewards-container > .rewards-partition {
+  height: 100%;
+  width: 1px;
+  background-color: linear-gradient(
+    to bottom,
+    #000000 0%,
+    #000000 100%,
+    #000000 0%
+  );
+  border: 1px solid;
+}
+
+.rewards-container .rewards-content {
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+
+.rewards-container .rewards-content > img {
+  width: 20rem;
+}
+
+.rewards-content h2 {
+  font-size: calc(var(--font-size-large-heading) * 1);
+  font-weight: 500;
+}
+
+.rewards-content p {
+  font-size: calc(var(--font-size-large-heading) * 0.4);
+  font-weight: 500;
+  opacity: 0.4;
+}
+
+.rewards-content span {
+  font-size: calc(var(--font-size-large-heading) * 0.4);
+}
+
+.block-views-blockprograms-block-9 .block-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* mentors section */
+.mentoring-container .view-content {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+/* faq section */
+.faq-section > h2{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.faq-section .view-content{
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 720px) {
+  .pitch-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .pitch-content > h2 {
+    font-size: calc(var(--font-size-large-heading) * 1.2);
+  }
+
+  .pitch-content > h3 {
+    font-size: calc(var(--font-size-large-heading) * 0.5);
+  }
+
+  .rewards-content h2 {
+    font-size: calc(var(--font-size-large-heading) * 1.4);
+    font-weight: 500;
+  }
+
+  .rewards-container .rewards-content {
+    padding: 0 4rem;
+  }
+
+  .rewards-container .rewards-content > img {
+    width: fit-content;
+  }
+
+  .mentoring-container .view-content {
+    justify-content: space-between;
+    gap: 8rem;
+    padding: 5rem 0;
+  }
+}
